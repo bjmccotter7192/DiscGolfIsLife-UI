@@ -15,7 +15,7 @@ export class MyBagComponent implements OnInit {
   ngOnInit() {
     this.discService.getData().subscribe(res => {
       this.discs = res;
-      this.discs = this.discs.sort(x => x.speed).sort(y => y.glide);
+      this.discs = this.discs.sort((d1, d2) => d2.speed - d1.speed);
     });
   }
 

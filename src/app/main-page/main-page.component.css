@@ -1,16 +1,9 @@
 .title-header{
-    color: white;
     font-size: 4rem;
 }
 
 .main-page-header{
     min-height: 6rem;
-    background-color: red;
-}
-
-.main-page-body{
-    min-height: 30rem;
-    background-color: blue;
 }
 
 .add-margin-top{

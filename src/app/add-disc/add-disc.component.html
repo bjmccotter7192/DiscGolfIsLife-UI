@@ -1,0 +1,94 @@
+<div class="columns" *ngIf="!added">
+  <div class="column">
+    <div class="disc-form">
+      <div class="columns">
+        <div class="column">
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="DiscName" [(ngModel)]="disc.discName">
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="field">
+            <label class="label">Manufacturer</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Manufacturer" [(ngModel)]="disc.manufacturer">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="field">
+            <label class="label">Speed</label>
+            <div class="control">
+              <input class="input" type="number" placeholder="Speed" [(ngModel)]="disc.speed">
+            </div>
+          </div>
+        </div>
+        <div class="column"> 
+          <div class="field">
+            <label class="label">Glide</label>
+            <div class="control">
+              <input class="input" type="number" placeholder="Glide" [(ngModel)]="disc.glide">
+            </div>
+          </div>  
+        </div>   
+        <div class="column">    
+          <div class="field">
+            <label class="label">Turn</label>
+            <div class="control">
+              <input class="input" type="number" placeholder="Turn" [(ngModel)]="disc.turn">
+            </div>
+          </div> 
+        </div>   
+        <div class="column">   
+          <div class="field">
+            <label class="label">Fade</label>
+            <div class="control">
+              <input class="input" type="number" placeholder="Fade" [(ngModel)]="disc.fade">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="field">
+            <label class="label">Plastic</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Plastic" [(ngModel)]="disc.plastic">
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="field">
+            <label class="label">Weight</label>
+            <div class="control">
+              <input class="input" type="number" placeholder="Weight" [(ngModel)]="disc.weight">
+            </div>
+          </div>
+        </div>    
+      </div>  
+      <div class="columns">
+        <div class="column">
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-link" [disabled]="!isValid()" (click)="addDisc()">Submit</button>
+            </div>
+            <div class="control">
+              <button class="button is-text" (click)="cancelAddDisc()">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<div class="columns" *ngIf="added">
+  <div class="column has-text-centered">
+    <div>Added Disc to Bag! Please refresh page!</div>
+  </div>
+</div>

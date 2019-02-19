@@ -1,0 +1,12 @@
+<div class="columns">
+  <div class="column has-text-centered">
+    <span>IN MY BAG</span>
+  </div>
+</div>
+<div class="columns is-multiline">
+    <div class="column is-one-quarter" *ngFor="let disc of discs">
+        <div class="has-text-centered box">
+          <app-my-disc [disc]="disc"></app-my-disc>
+        </div>
+    </div>
+</div>

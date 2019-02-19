@@ -1,0 +1,41 @@
+<div class="columns">
+  <div class="column disc-name-avatar" [ngStyle]="{'border-color': getColor(disc.speed)}">
+    {{disc.discName}}    
+  </div>
+</div>
+
+<div class="columns header-margins">
+  <div class="column">
+    S
+  </div>
+  <div class="column">
+    G
+  </div>
+  <div class="column">
+    T
+  </div>
+  <div class="column">
+    F
+  </div>
+  <div class="column">
+    W
+  </div>
+</div>
+<hr>
+<div class="columns">
+  <div class="column">
+    {{disc.speed}}
+  </div>
+  <div class="column">
+    {{disc.glide}}
+  </div>
+  <div class="column">
+    {{disc.turn}}
+  </div>
+  <div class="column">
+    {{disc.fade}}
+  </div>
+  <div class="column">
+    {{disc.weight}}g
+  </div>
+</div>

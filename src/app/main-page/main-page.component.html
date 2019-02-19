@@ -3,22 +3,22 @@
   <div class="column is-two-thirds has-text-left title-header">DGIL</div>
   <div class="column"></div>
 </div>
-<div class="columns main-page-body">
+<div class="columns main-page-body is-mobile">
   <div class="column"></div>
-  <div class="column is-two-thirds box add-margin-top is-mobile">
-    <div class="columns">
+  <div class="column is-two-thirds box add-margin-top">
+    <div class="columns is-mobile">
       <div class="column is-two-thirds">      
       </div>
       <div class="column has-text-right">
         <button (click)="toggleAddNew()">{{newDiscButton}}</button>
       </div>
     </div>
-    <div class="columns">
+    <div class="columns is-mobile">
       <div class="column" *ngIf="adding">
         <app-add-disc></app-add-disc>
       </div>
     </div>  
-    <div class="columns">
+    <div class="columns is-mobile">
       <div class="column">
         <app-my-bag></app-my-bag>
       </div>

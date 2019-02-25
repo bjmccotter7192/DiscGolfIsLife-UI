@@ -17,7 +17,7 @@ export class MyDiscComponent implements OnInit {
   getColor(discSpeed: number){
     if(discSpeed >= 10)
       return 'red';
-    else if(discSpeed >= 7)
+    else if(discSpeed >= 6)
       return 'orange';
     else if(discSpeed >= 4)
       return 'blue';
